@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aVS-pr-r1A">
+                                <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="SliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="CB0-qP-cG1"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5o-h3-VHc">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgd-zd-R81">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="8wv-PO-5rb"/>
+                                    <constraint firstAttribute="height" constant="33" id="w2y-YL-XbH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hbi-cd-ccI">
+                                <color key="minimumTrackTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="SliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Pkd-4M-oqb"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZm-Sp-5xz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="XnJ-j5-tZ4"/>
+                                    <constraint firstAttribute="width" constant="125" id="vCa-g8-YJV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AQZ-TH-Z2V">
+                                <color key="minimumTrackTintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="SliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="x7B-qJ-gVt"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUV-YZ-M8X">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="XxG-L8-z4b"/>
+                                    <constraint firstAttribute="width" constant="125" id="Xz3-rU-JQo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lgd-zd-R81" firstAttribute="centerX" secondItem="hbi-cd-ccI" secondAttribute="centerX" id="4jw-qR-vpQ"/>
+                            <constraint firstItem="UZm-Sp-5xz" firstAttribute="centerX" secondItem="AQZ-TH-Z2V" secondAttribute="centerX" id="5iq-z8-97a"/>
+                            <constraint firstItem="o5o-h3-VHc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="HiP-ZJ-24q"/>
+                            <constraint firstItem="hbi-cd-ccI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NHe-xc-6OC"/>
+                            <constraint firstItem="hbi-cd-ccI" firstAttribute="top" secondItem="lgd-zd-R81" secondAttribute="bottom" constant="34" id="Nrw-bm-S62"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o5o-h3-VHc" secondAttribute="trailing" constant="28" id="OZx-Cz-qtN"/>
+                            <constraint firstItem="SUV-YZ-M8X" firstAttribute="top" secondItem="AQZ-TH-Z2V" secondAttribute="bottom" constant="15" id="Tjh-01-eQQ"/>
+                            <constraint firstItem="o5o-h3-VHc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="Tq8-Gl-SEt"/>
+                            <constraint firstItem="lgd-zd-R81" firstAttribute="centerX" secondItem="AQZ-TH-Z2V" secondAttribute="centerX" id="UkG-ZC-3oi"/>
+                            <constraint firstItem="SUV-YZ-M8X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="127" id="a2F-u7-3Qf"/>
+                            <constraint firstItem="aVS-pr-r1A" firstAttribute="top" secondItem="o5o-h3-VHc" secondAttribute="bottom" constant="53" id="fl2-Es-6xS"/>
+                            <constraint firstItem="lgd-zd-R81" firstAttribute="top" secondItem="aVS-pr-r1A" secondAttribute="bottom" constant="16" id="ji2-8I-qoY"/>
+                            <constraint firstItem="AQZ-TH-Z2V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="lta-or-bFN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SUV-YZ-M8X" secondAttribute="bottom" constant="92" id="nrW-WZ-8PC"/>
+                            <constraint firstItem="hbi-cd-ccI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="26" id="oYm-re-eOk"/>
+                            <constraint firstItem="AQZ-TH-Z2V" firstAttribute="top" secondItem="UZm-Sp-5xz" secondAttribute="bottom" constant="34" id="vN7-QA-yDD"/>
+                            <constraint firstItem="o5o-h3-VHc" firstAttribute="trailing" secondItem="aVS-pr-r1A" secondAttribute="trailing" id="xTO-wF-fqX"/>
+                            <constraint firstItem="o5o-h3-VHc" firstAttribute="leading" secondItem="aVS-pr-r1A" secondAttribute="leading" id="xrc-MR-jep"/>
+                            <constraint firstItem="UZm-Sp-5xz" firstAttribute="top" secondItem="hbi-cd-ccI" secondAttribute="bottom" constant="15" id="yOm-Zw-uoQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="UZm-Sp-5xz" id="Whj-l4-JdU"/>
+                        <outlet property="blueSlider" destination="hbi-cd-ccI" id="VNe-6W-7Gw"/>
+                        <outlet property="colorView" destination="o5o-h3-VHc" id="mvK-hS-gjn"/>
+                        <outlet property="greenLabel" destination="SUV-YZ-M8X" id="T2B-nH-Tuw"/>
+                        <outlet property="greenSlider" destination="AQZ-TH-Z2V" id="7M7-QQ-mSO"/>
+                        <outlet property="redLabel" destination="lgd-zd-R81" id="ght-bg-Djp"/>
+                        <outlet property="redSlider" destination="aVS-pr-r1A" id="kRL-7x-oHl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

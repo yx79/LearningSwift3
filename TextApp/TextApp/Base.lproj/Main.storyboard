@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. 10010" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ckn-pL-TZF">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ 25.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bvZ-Rb-SQO">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zipcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzi-LU-zVL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rP-LY-2OB">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SOV-XB-faE">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbk-Lo-A3X"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lockable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYz-Sg-5PX">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="zbk-Lo-A3X" secondAttribute="trailing" constant="3" id="6qe-HN-8KX"/>
+                            <constraint firstItem="SOV-XB-faE" firstAttribute="top" secondItem="zbk-Lo-A3X" secondAttribute="top" id="9Hl-Gw-2RX"/>
+                            <constraint firstItem="Ckn-pL-TZF" firstAttribute="top" secondItem="yzi-LU-zVL" secondAttribute="bottom" constant="7" id="FEU-Wh-obQ"/>
+                            <constraint firstItem="Ckn-pL-TZF" firstAttribute="leading" secondItem="yzi-LU-zVL" secondAttribute="leading" id="HQy-Zb-HYt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zbk-Lo-A3X" secondAttribute="bottom" constant="370" id="HYU-i3-XLM"/>
+                            <constraint firstItem="bvZ-Rb-SQO" firstAttribute="leading" secondItem="8rP-LY-2OB" secondAttribute="leading" id="MdB-ih-5f0"/>
+                            <constraint firstItem="aYz-Sg-5PX" firstAttribute="leading" secondItem="SOV-XB-faE" secondAttribute="leading" id="RX7-Lv-SmV"/>
+                            <constraint firstItem="bvZ-Rb-SQO" firstAttribute="top" secondItem="8rP-LY-2OB" secondAttribute="bottom" constant="8" symbolic="YES" id="S1B-AG-fOb"/>
+                            <constraint firstItem="aYz-Sg-5PX" firstAttribute="top" secondItem="bvZ-Rb-SQO" secondAttribute="bottom" constant="61" id="Zon-Ve-4sb"/>
+                            <constraint firstItem="SOV-XB-faE" firstAttribute="top" secondItem="aYz-Sg-5PX" secondAttribute="bottom" constant="3" id="brZ-jg-3cS"/>
+                            <constraint firstItem="Ckn-pL-TZF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hiY-43-Ijv"/>
+                            <constraint firstItem="Ckn-pL-TZF" firstAttribute="trailing" secondItem="bvZ-Rb-SQO" secondAttribute="trailing" id="l85-XM-nML"/>
+                            <constraint firstItem="bvZ-Rb-SQO" firstAttribute="leading" secondItem="aYz-Sg-5PX" secondAttribute="leading" id="no8-Mj-XWI"/>
+                            <constraint firstItem="8rP-LY-2OB" firstAttribute="top" secondItem="Ckn-pL-TZF" secondAttribute="bottom" constant="44" id="rNS-Hr-3xc"/>
+                            <constraint firstItem="zbk-Lo-A3X" firstAttribute="leading" secondItem="SOV-XB-faE" secondAttribute="trailing" constant="16" id="s0Y-VA-LfM"/>
+                            <constraint firstItem="Ckn-pL-TZF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sfc-yl-uln"/>
+                            <constraint firstItem="Ckn-pL-TZF" firstAttribute="leading" secondItem="8rP-LY-2OB" secondAttribute="leading" id="zDL-dS-0Ck"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cashTextField" destination="bvZ-Rb-SQO" id="eCx-We-R5n"/>
+                        <outlet property="lockSwitch" destination="zbk-Lo-A3X" id="Wv1-cD-PW7"/>
+                        <outlet property="lockableTextField" destination="SOV-XB-faE" id="XDK-25-Yrc"/>
+                        <outlet property="zipcodeTextField" destination="Ckn-pL-TZF" id="spp-Co-cec"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>

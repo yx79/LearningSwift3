@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B87F96A51DE2EF6900D47142 /* RandomColorTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87F96A41DE2EF6900D47142 /* RandomColorTextFieldDelegate.swift */; };
+		B87F96A71DE2F42700D47142 /* EmojiTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87F96A61DE2F42700D47142 /* EmojiTextFieldDelegate.swift */; };
 		B8A59E341DD91C3800F98DA6 /* CashTextfieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A59E331DD91C3800F98DA6 /* CashTextfieldDelegate.swift */; };
 		B8B21A1B1DD81CD400AE6437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B21A1A1DD81CD400AE6437 /* AppDelegate.swift */; };
 		B8B21A1D1DD81CD400AE6437 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B21A1C1DD81CD400AE6437 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B87F96A41DE2EF6900D47142 /* RandomColorTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomColorTextFieldDelegate.swift; sourceTree = "<group>"; };
+		B87F96A61DE2F42700D47142 /* EmojiTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiTextFieldDelegate.swift; sourceTree = "<group>"; };
 		B8A59E331DD91C3800F98DA6 /* CashTextfieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashTextfieldDelegate.swift; sourceTree = "<group>"; };
 		B8B21A171DD81CD400AE6437 /* TextApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B21A1A1DD81CD400AE6437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,8 @@
 			children = (
 				B8B21A2D1DD8210700AE6437 /* ZipcodeTextfieldDelegate.swift */,
 				B8A59E331DD91C3800F98DA6 /* CashTextfieldDelegate.swift */,
+				B87F96A41DE2EF6900D47142 /* RandomColorTextFieldDelegate.swift */,
+				B87F96A61DE2F42700D47142 /* EmojiTextFieldDelegate.swift */,
 			);
 			name = "TextField Delegates";
 			sourceTree = "<group>";
@@ -155,6 +161,8 @@
 				B8A59E341DD91C3800F98DA6 /* CashTextfieldDelegate.swift in Sources */,
 				B8B21A1B1DD81CD400AE6437 /* AppDelegate.swift in Sources */,
 				B8B21A2E1DD8210700AE6437 /* ZipcodeTextfieldDelegate.swift in Sources */,
+				B87F96A51DE2EF6900D47142 /* RandomColorTextFieldDelegate.swift in Sources */,
+				B87F96A71DE2F42700D47142 /* EmojiTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
